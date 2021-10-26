@@ -1,0 +1,11 @@
+//
+//  Development.xcconfig
+//  Gamepedia
+//
+//  Created by Dayton on 24/08/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+BASE_URL = https:/$()/api.rawg.io/api/
+API_KEY = YOUR_API_KEY

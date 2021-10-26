@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserDataView" customModule="Gamepedia" customModuleProvider="target">
+            <connections>
+                <outlet property="cityContainer" destination="9Fb-0e-Kme" id="X8S-5T-BWk"/>
+                <outlet property="emailContainer" destination="qwX-nF-oSx" id="M9x-u2-J4e"/>
+                <outlet property="imageBtn" destination="qGd-pk-jI5" id="JjA-K1-ebk"/>
+                <outlet property="nameContainer" destination="byU-ly-mbg" id="WUu-kE-WRe"/>
+                <outlet property="schoolContainer" destination="1ew-ql-QDg" id="NMk-vK-Ejm"/>
+                <outlet property="updateBtn" destination="r5q-yW-gSs" id="EYj-pu-6YS"/>
+                <outlet property="view" destination="iN0-l3-epB" id="YbN-Ag-0KQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGd-pk-jI5">
+                    <rect key="frame" x="127" y="60" width="160" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="JTY-IH-NjO"/>
+                        <constraint firstAttribute="height" constant="160" id="vrd-W7-tG0"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="plusphoto"/>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7Tv-1Q-2Jh">
+                    <rect key="frame" x="32" y="236" width="350" height="314"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="byU-ly-mbg" userLabel="NameContainer" customClass="InputContainerView" customModule="Gamepedia" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="person" catalog="system"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Full Name"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwX-nF-oSx" userLabel="EmailContainer" customClass="InputContainerView" customModule="Gamepedia" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="66" width="350" height="50"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="mail"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Email"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ew-ql-QDg" userLabel="SchoolContainer" customClass="InputContainerView" customModule="Gamepedia" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="132" width="350" height="50"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="building.columns" catalog="system"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="School/University"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Fb-0e-Kme" userLabel="CityContainer" customClass="InputContainerView" customModule="Gamepedia" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="198" width="350" height="50"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="building.2" catalog="system"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="City"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5q-yW-gSs" userLabel="UpdateButton">
+                            <rect key="frame" x="0.0" y="264" width="350" height="50"/>
+                            <color key="backgroundColor" name="cellColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="AwE-EW-rJB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="18"/>
+                            <state key="normal" title="Update">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="navColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="7Tv-1Q-2Jh" secondAttribute="bottom" constant="16" id="3Su-YC-RPw"/>
+                <constraint firstItem="qGd-pk-jI5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="BkX-DM-gDW"/>
+                <constraint firstItem="7Tv-1Q-2Jh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="dhK-pN-2RX"/>
+                <constraint firstItem="7Tv-1Q-2Jh" firstAttribute="top" secondItem="qGd-pk-jI5" secondAttribute="bottom" constant="16" id="n0O-G0-X4T"/>
+                <constraint firstItem="qGd-pk-jI5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="uH9-vc-2xm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7Tv-1Q-2Jh" secondAttribute="trailing" constant="32" id="uqh-Zq-Rf4"/>
+            </constraints>
+            <point key="canvasLocation" x="2.8985507246376816" y="81.696428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="building.2" catalog="system" width="128" height="106"/>
+        <image name="building.columns" catalog="system" width="128" height="113"/>
+        <image name="mail" width="48" height="48"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="plusphoto" width="300" height="300"/>
+        <namedColor name="cellColor">
+            <color red="0.097999997437000275" green="0.11400000005960464" blue="0.20399999618530273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="navColor">
+            <color red="0.012000000104308128" green="0.012000000104308128" blue="0.11400000005960464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

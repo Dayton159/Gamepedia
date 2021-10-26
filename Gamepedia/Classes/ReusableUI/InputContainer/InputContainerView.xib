@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputContainerView" customModule="Gamepedia" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="KMP-le-IL7"/>
+                <outlet property="imageView" destination="4k4-VN-iIP" id="IyT-4t-ddu"/>
+                <outlet property="textField" destination="6V1-Sm-wnB" id="eEk-AF-Df8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.87" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4k4-VN-iIP">
+                    <rect key="frame" x="8" y="13" width="24" height="24"/>
+                    <color key="backgroundColor" name="cellColor"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="LqY-LH-RXL"/>
+                        <constraint firstAttribute="width" constant="24" id="rJt-kB-fhT"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rsr-jS-io5">
+                    <rect key="frame" x="8" y="49" width="406" height="1"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="TzV-CZ-cpq"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="6V1-Sm-wnB">
+                    <rect key="frame" x="40" y="8" width="374" height="34"/>
+                    <color key="backgroundColor" name="navColor"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="navColor"/>
+            <constraints>
+                <constraint firstItem="rsr-jS-io5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="0om-Rg-A9b"/>
+                <constraint firstItem="6V1-Sm-wnB" firstAttribute="leading" secondItem="4k4-VN-iIP" secondAttribute="trailing" constant="8" id="49d-oK-LKG"/>
+                <constraint firstItem="4k4-VN-iIP" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="EgF-H4-UH3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="6V1-Sm-wnB" secondAttribute="bottom" constant="8" id="Nz4-s2-ddr"/>
+                <constraint firstItem="4k4-VN-iIP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="TDq-ZS-vee"/>
+                <constraint firstAttribute="trailing" secondItem="rsr-jS-io5" secondAttribute="trailing" id="V9J-3c-Bgl"/>
+                <constraint firstAttribute="trailing" secondItem="6V1-Sm-wnB" secondAttribute="trailing" id="XM8-MA-hxz"/>
+                <constraint firstItem="6V1-Sm-wnB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="fe3-BF-dBw"/>
+                <constraint firstAttribute="bottom" secondItem="rsr-jS-io5" secondAttribute="bottom" id="klc-9B-23Q"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-54" y="82"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="cellColor">
+            <color red="0.097999997437000275" green="0.11400000005960464" blue="0.20399999618530273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="navColor">
+            <color red="0.012000000104308128" green="0.012000000104308128" blue="0.11400000005960464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
